@@ -1,6 +1,6 @@
 module.exports = (sequelize,  dataTypes) => {
-    const tableGenresName = "Genres";
-    const tableGenresCols = {
+    const GenresName = "Genres";
+    const GenresCols = {
         id : {
             type : dataTypes.INTEGER,
             primaryKey : true,
@@ -23,7 +23,7 @@ module.exports = (sequelize,  dataTypes) => {
             defaultValue : 1,
         },
     }
-    const tableGenresConfig = {
+    const GenresConfig = {
         tableName : "genres",
         timestamps : true,
     }

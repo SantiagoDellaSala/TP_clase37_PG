@@ -1,6 +1,6 @@
 module.exports = (sequelize,  dataTypes) => {
-    const tableMoviesName = "Movies";
-    const tableMoviesCols = {
+    const MoviesName = "Movies";
+    const MoviesCols = {
         id : {
             type : dataTypes.INTEGER.UNSIGNED,
             primaryKey : true,
@@ -29,12 +29,12 @@ module.exports = (sequelize,  dataTypes) => {
             
         }
     }
-    const tableMoviesConfig = {
+    const MoviesConfig = {
         tableName : "movies",
         timestamps : true,
     }
 
-    const Movie = sequelize.define(tableMoviesName, tableMoviesCols, tableMoviesConfig)
+    const Movie = sequelize.define(MoviesName, MoviesCols, MoviesConfig)
 
     return Movie
 }
